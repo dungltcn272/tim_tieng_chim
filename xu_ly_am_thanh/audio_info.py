@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import librosa
 
+
+# trích rút và lưu đặc trưng cho mỗi audio lưu vào csv
 class AudioInfo:
     def __init__(self, file_path):
         self.file_path = file_path

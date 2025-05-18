@@ -1,5 +1,7 @@
 import pandas as pd
 
+
+# tính toán trung bình  + độ lệch chuẩn
 def calculate_mean_std(input_csv, output_csv):
     df = pd.read_csv(input_csv)
     numeric_df = df.select_dtypes(include="number")

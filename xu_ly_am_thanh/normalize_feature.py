@@ -3,6 +3,8 @@ import pandas as pd
 def load_mean_std(csv_path):
     return pd.read_csv(csv_path)
 
+
+# chuẩn hóa Z-Score (-1 -> 1)
 def normalize_features(df, mean_std_df):
     df_normalized = df.copy()
     for col in df.select_dtypes(include="number").columns:

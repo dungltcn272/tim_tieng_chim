@@ -2,11 +2,13 @@ import os
 from xu_ly_am_thanh.audio_info import AudioInfo
 import pandas as pd
 
+
+# lưu đặc trưng vào DB
 def build_database(folder_path, output_csv):
     all_features = []
     for root, _, files in os.walk(folder_path):
         for file in files:
-            if file.endswith(".flac"):
+            if file.endswith(".wav"):
                 file_path = os.path.join(root, file)
                 try:
                     ai = AudioInfo(file_path)

@@ -1,6 +1,8 @@
 import pandas as pd
 from tim_kiem_tuong_dong.distance_calculator import calculate_distance
 
+
+# tìm kiếm kết quả gần 
 def search_similar(output_csv, dataset_df, mean_std_df, query_df):
     results = []
     for _, row in dataset_df.iterrows():
